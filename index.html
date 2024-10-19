@@ -10,9 +10,37 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
 
     <title>Edward Lu</title>
+
+    <style>
+        strong {
+            font-weight: bolder;
+        }
+
+        .list-item {
+            margin-bottom: 10px;
+        }
+
+        .link {
+            border-bottom: 1px black dotted;
+            color: black;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .link:hover {
+            border-bottom: 1px black solid;
+            color: black;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .paper-title {
+            font-size: 18px;
+        }
+    </style>
 </head>
 
-<body style="background-color: #eee;">
+<body style="background-color: #ffffff;">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,21 +70,26 @@
         <!-- Entries Column -->
         <div class="col-md-8">
             <!-- Main Image -->
-            <img class="img-thumbnail rounded" src="profile.png" alt="profile" style="margin-top:3%;"><br>
+            <img class="img-thumbnail rounded" src="files/profile.png" alt="profile" style="margin-top:3%;"><br/>
         </div>
 
         <!-- Sidebar -->
         <div class="col-md-4">
-            <div style="margin-top:5%; font-family: 'Open Sans', sans-serif; font-size: 35px;"><b>Edward Lu</b></div><br>
-            <p>PhD student in <a href="https://www.ece.cmu.edu">ECE</a> at <a href="https://www.cmu.edu">Carnegie Mellon University</a>, advised by <a href="https://users.ece.cmu.edu/~agr">Prof. Anthony Rowe</a> (since August 2022).</p>
+            <div style="margin-top:5%; font-family: 'Open Sans', sans-serif; font-size: 35px;"><b>Edward Lu</b></div><br/>
+            <p>PhD student in <a class="link" href="https://www.ece.cmu.edu">ECE</a> at <a class="link" href="https://www.cmu.edu">Carnegie Mellon University</a>, advised by <a class="link" href="https://users.ece.cmu.edu/~agr">Anthony Rowe</a> (since August 2022).</p>
 
-            <p>Also did my undergrad in <a href="https://www.ece.cmu.edu">ECE</a> at <a href="https://www.cmu.edu">Carnegie Mellon University</a> (graduated May 2022).</p>
+            <p>Previously, I did my undergrad in <a class="link" href="https://www.ece.cmu.edu">ECE</a> at <a class="link" href="https://www.cmu.edu">Carnegie Mellon University</a> (graduated May 2022).</p>
 
-            <p>I am fortunate enough to be supported by the <a href="https://www.nsfgrfp.org/">NSF GRFP</a>.</p>
+            <p>I am fortunate enough to be supported by the <a class="link" href="https://www.nsfgrfp.org/">NSF GRFP</a>.</p>
 
             <p>
-            <b>Email: <a style="color: black;" href="mailto:elu2@cmu.edu">elu2@cmu.edu</a></b><br>
-            <b>Github: <a style="color: black;" href="https://github.com/EdwardLu2018">EdwardLu2018</a></b>
+                <strong><a target="_blank" class="link" href="mailto:elu2@cmu.edu">Email</a></strong>
+                |
+                <b><a target="_blank" class="link" href="https://github.com/EdwardLu2018">GitHub</a></b>
+                |
+                <b><a target="_blank" class="link" href="https://scholar.google.com/citations?user=OARi3GUAAAAJ&hl=en">Google Scholar</a></b>
+                |
+                <b><a target="_blank" class="link" href="https://www.linkedin.com/in/edward-lu-0793001ab/">LinkedIn</a></b>
             </p>
         </div>
 
@@ -64,53 +97,107 @@
         <div class="col-md-8" style="margin-top:3%;">
             <h3 id="research">Research</h3>
 
-            <p>My research interests lie in creating next-generation computer systems that support augmented, virtual, and mixed reality (combined to be called eXtended Reality, or <a href="https://en.wikipedia.org/wiki/Extended_reality">XR</a>) devices.</p>
+            <p>
+                My current research explores prototyping and evaluating networked
+                <a class="link" href="https://en.wikipedia.org/wiki/Visual_computing">visual computing</a> systems.
+                Specifically, I am interested in creating next-generation computer systems that support
+                augmented, virtual, and mixed reality (combined to be called eXtended Reality, or
+                <a class="link" href="https://en.wikipedia.org/wiki/Extended_reality">XR</a>) devices.
+            </p>
         </div>
 
         <!-- Publications -->
         <div class="col-md-8" style="margin-top: 3%;">
             <h3 id="publications">Publications</h3>
 
-            <strong>Papers:</strong><br/>
+            <h5>Papers:</h5>
             <ul>
-            <li>
-                <strong><a href="https://users.ece.cmu.edu/~elu2/files/renderfusion_ismar_23.pdf">RenderFusion: Balancing Local and Remote Rendering for Interactive 3D Scenes</a></strong> (<a href="https://www.youtube.com/watch?v=6mA4k9myuOM">video</a>, <a href="https://drive.google.com/file/d/13_K7Uhgdv5TUhB6VnhhL7DuCWu_wbKWy/view?t=1h5m9s">talk</a>)
-                <br>
+            <li class="list-item">
+                <strong class="paper-title">
+                    <a class="link" href="files/xair_ismar_24.pdf">XaiR: An XR Platform that Integrates Large Language Models with the Physical World</a></strong>
+                <br/>
+                Sruti Srinidhi, <strong>Edward Lu</strong>, Anthony Rowe
+                <br/>
+                <i>ISMAR 2024: IEEE International Symposium on Mixed and Augmented Reality</i>
+                <br/>
+                <span style='color:#ed4545;'>Best Student Paper Award</span>
+                <br/>
+                <a class="link" href="https://www.youtube.com/watch?v=vs5NlOlSBu8">Video</a> | <a class="link" href="https://srutisrinidhi.github.io/XaiR/">Webpage</a> | <a class="link" href="https://github.com/srutisrinidhi/XaiR">Code</a>
+            </li>
+            <li class="list-item">
+                <strong class="paper-title">
+                    <a class="link" href="files/renderfusion_ismar_23.pdf">RenderFusion: Balancing Local and Remote Rendering for Interactive 3D Scenes</a>
+                </strong>
+                <br/>
                 <strong>Edward Lu</strong>, Sagar Bharadwaj, Mallesham Dasari, Connor Smith, Srinivasan Seshan, Anthony Rowe
-                <br>
-                <i><strong>IEEE ISMAR 2023</strong> (IEEE International Symposium on Mixed and Augmented Reality)</i>
+                <br/>
+                <i>ISMAR 2023: IEEE International Symposium on Mixed and Augmented Reality</i>
+                <br/>
+                <a class="link" href="https://www.youtube.com/watch?v=6mA4k9myuOM">Video</a> | <a class="link" href="https://drive.google.com/file/d/13_K7Uhgdv5TUhB6VnhhL7DuCWu_wbKWy/view?t=1h5m9s">Talk</a> | <a class="link" href="https://github.com/arenaxr/arena-renderfusion">Code</a>
             </li>
-            <li>
-                <strong><a href="https://users.ece.cmu.edu/~elu2/files/scaling_vr_video_conf_ieeevr_23.pdf">Scaling VR Video Conferencing</a></strong> (<a href="https://www.youtube.com/watch?v=w5OtjFDQm1Q">teaser</a>)
-                <br>
+            <li class="list-item">
+                <strong class="paper-title">
+                    <a class="link" href="files/scaling_vr_video_conf_ieeevr_23.pdf">Scaling VR Video Conferencing</a>
+                </strong>
+                <br/>
                 Mallesham Dasari, <strong>Edward Lu</strong>, Micheal Farb, Nuno Pereira, Ivan Liang, Anthony Rowe
-                <br>
-                <i><strong>IEEE VR 2023</strong> (IEEE Conference on Virtual Reality and 3D User Interfaces)</i>
+                <br/>
+                <i>VR 2023: IEEE Conference on Virtual Reality and 3D User Interfaces</i>
+                <br/>
+                <a class="link" href="https://www.youtube.com/watch?v=w5OtjFDQm1Q">Video</a>
             </li>
-            <li>
-                <strong><a href="https://users.ece.cmu.edu/~elu2/files/flash_ismar_21.pdf">FLASH: Video-Embeddable AR Anchors for Live Events</a></strong> (<a href="https://www.youtube.com/watch?v=MC6Mty0rsRg">video</a>, <a href="https://www.youtube.com/watch?v=CMeuwaUxzN4&t=1h15m35s">talk</a>)
-                <br>
+            <li class="list-item">
+                <strong class="paper-title">
+                    <a class="link" href="files/flash_ismar_21.pdf">FLASH: Video-Embeddable AR Anchors for Live Events</a>
+                </strong>
+                <br/>
                 <strong>Edward Lu</strong>, John Miller, Nuno Pereira, Anthony Rowe
-                <br>
-                <i><strong>IEEE ISMAR 2021</strong> (IEEE International Symposium on Mixed and Augmented Reality)</i>
+                <br/>
+                <i>ISMAR 2021: IEEE International Symposium on Mixed and Augmented Reality</i>
+                <br/>
+                <a class="link" href="https://www.youtube.com/watch?v=MC6Mty0rsRg">Video</a> | <a class="link" href="https://www.youtube.com/watch?v=CMeuwaUxzN4&t=1h15m35s">Talk</a> | <a class="link" href="https://github.com/EdwardLu2018/flash-browser-detector">Code</a>
             </li>
-            <li>
-                <strong><a href="https://users.ece.cmu.edu/~elu2/files/arena_ismar_21.pdf">ARENA: The Augmented Reality Edge Networking Architecture</a></strong> (<a href="https://www.youtube.com/watch?v=zNLL9AbruKQ">video</a>, <a href="https://arenaxr.org/">webpage</a>)
-                <br>
+            <li class="list-item">
+                <strong class="paper-title">
+                    <a class="link" href="files/arena_ismar_21.pdf">ARENA: The Augmented Reality Edge Networking Architecture</a>
+                </strong>
+                <br/>
                 Nuno Pereira, Anthony Rowe, Micheal Farb, Ivan Liang, <strong>Edward Lu</strong>, Eric Riebling
-                <br>
-                <i><strong>IEEE ISMAR 2021</strong> (IEEE International Symposium on Mixed and Augmented Reality)</i>
+                <br/>
+                <i>ISMAR 2021: IEEE International Symposium on Mixed and Augmented Reality</i>
+                <br/>
+                <span style='color:#ed4545;'>Nominated for Best Paper Award</span>
+                <br/>
+                <a class="link" href="https://www.youtube.com/watch?v=zNLL9AbruKQ">Video</a> | <a class="link" href="https://arenaxr.org/">Webpage</a> | <a class="link" href="https://github.com/arenaxr">Code</a>
             </li>
             </ul>
 
-            <strong>Posters:</strong><br/>
+            <h5>Demos:</h5>
             <ul>
-            <li>
-                <strong><a href="https://users.ece.cmu.edu/~elu2/files/flamingo_dynamic_walking_20.pdf">Generating a Dynamic Controller for a Flamingo Inspired Robot using Deep Reinforcement Learning</a></strong> (<a href="https://www.youtube.com/watch?v=OsKhYW7BUNg">video1</a>, <a href="https://www.youtube.com/watch?v=raiamvzfQTY">video2</a>)
-                <br>
+            <li class="list-item">
+                <strong class="paper-title">
+                    <a class="link" href="files/meshreduce_vr_24.pdf">MeshReduce: Split Rendering of Live 3D Scene for Virtual Teleportation</a>
+                </strong>
+                <br/>
+                Tao Jin, <strong>Edward Lu</strong>, Mallesham Dasari, Kittipat Apicharttrisorn, Srinivasan Seshan, Anthony Rowe
+                <br/>
+                <i>VR 2024: IEEE Conference on Virtual Reality and 3D User Interfaces</i>
+                <br/>
+                <a class="link" href="https://www.youtube.com/watch?v=561-RQ1zVc4">Video</a> | <a class="link" href="https://github.com/taojin-6/MeshReduce">Code</a>
+            </ul>
+
+            <h5>Posters:</h5>
+            <ul>
+            <li class="list-item">
+                <strong class="paper-title">
+                    <a class="link" href="files/flamingo_dynamic_walking_20.pdf">Generating a Dynamic Controller for a Flamingo Inspired Robot using Deep Reinforcement Learning</a>
+                </strong>
+                <br/>
                 <strong>Edward Lu</strong>, Nathan J. Kong, J. Joseph Payne, Aaron M. Johnson
-                <br>
-                <i><strong>Dynamic Walking 2020</strong></i>
+                <br/>
+                <i>Dynamic Walking 2020</i>
+                <br/>
+                <a class="link" href="https://www.youtube.com/watch?v=OsKhYW7BUNg">Video 1</a> | <a class="link" href="https://www.youtube.com/watch?v=raiamvzfQTY">Video 2</a>
             </li>
             </ul>
         </div>
@@ -120,11 +207,13 @@
             <h3 id="awards">Awards</h3>
 
             <ul>
-            <li><a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship</a>, <i>2023</i></li>
-            <li><a href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta PhD Fellowship</a> (Finalist), <i>2023</i></li>
-            <li>University Honors, <i>CMU 2022</i></li>
-            <li>Best Paper (Finalist), <i>ISMAR 2021</i> — <a href="https://users.ece.cmu.edu/~elu2/files/arena_ismar_21.pdf">ARENA: The Augmented Reality Edge Networking Architecture</a></li>
-            <li>Best <a href="https://docs.arenaxr.org/ismar-contest">"Hybrid Conference of the Future"</a>, <i>ISMAR 2021</i> — <a href="https://users.ece.cmu.edu/~elu2/files/arena_ismar_competition.pdf">Hybrid Conference Experiences in the ARENA</a></li>
+            <li class="list-item"><strong><a class="link" href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship</a></strong>, <i>2023</i></li>
+            <li class="list-item"><strong><a class="link" href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta PhD Fellowship</a> (Finalist)</strong>, <i>2023</i></li>
+            <li class="list-item"><strong>University Honors</strong>, <i>CMU 2022</i></li>
+            <li class="list-item">
+                <strong>Best <a class="link" href="https://docs.arenaxr.org/ismar-contest">"Hybrid Conference of the Future"</a></strong>, <i>ISMAR 2021</i>
+                <br/>
+                Accompanying Journal Entry: <a class="link" href="files/arena_ismar_competition.pdf">Hybrid Conference Experiences in the ARENA</a></li>
             </ul>
         </div>
 
@@ -132,18 +221,17 @@
         <div class="col-md-8" style="margin-top: 3%;">
             <h3 id="experience">Experience</h3>
 
-            <p>I have been working with <a href="https://users.ece.cmu.edu/~agr">Prof. Anthony Rowe</a>'s <a href="https://wise.ece.cmu.edu">lab</a> since Summer 2020.</p>
-
-            <p>I was a research intern at <a href="https://www.magicleap.com">Magic Leap</a> in Summer 2022.</p>
-
-            <p>I was a SWE intern at <a href="https://www.apple.com">Apple</a> in Summer 2021.</p>
-
-            <p>I have also worked with <a href="https://www.andrew.cmu.edu/user/amj1">Prof. Aaron Johnson</a>'s <a href="https://www.cmu.edu/me/robomechanicslab">lab</a> from Summer 2019 to Spring 2020.</p>
+            <ul>
+            <li class="list-item">I have been working with <a class="link" href="https://users.ece.cmu.edu/~agr">Anthony Rowe</a>'s <a class="link" href="https://wise.ece.cmu.edu">lab</a> since Summer 2020.</li>
+            <li class="list-item">I was a research intern at <a class="link" href="https://www.magicleap.com">Magic Leap</a> working with <a class="link" href="https://www.linkedin.com/in/connor-smith-a74728221">Connor Smith</a> and <a class="link" href="https://www.linkedin.com/in/chudavid">David Chu</a> in Summer 2022.</li>
+            <li class="list-item">I was a SWE intern at <a class="link" href="https://www.apple.com">Apple</a> in Summer 2021.</li>
+            <li class="list-item">I have also worked with <a class="link" href="https://www.andrew.cmu.edu/user/amj1">Aaron Johnson</a>'s <a class="link" href="https://www.cmu.edu/me/robomechanicslab">lab</a> from Summer 2019 to Spring 2020.</li>
+            </ul>
         </div>
 
     </div>
 
-    <p style="color:#b5bec9; font-size:0.8em; float:right;">© 2023 Edward Lu. Modified from <a style="color:#b5bec9;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>.</p>
+    <p style="color:#b5bec9; font-size:0.8em; float:right;">© 2024 Edward Lu. Modified from <a style="color:#b5bec9;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>.</p>
 </div>
 </body>
 
